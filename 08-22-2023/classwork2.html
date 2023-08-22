@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="classwork2.css">
+</head>
+<body>
+    <button id="open" class="btn">Open</button>
+
+    <div class="registration-form">
+
+        <form action="" style="display: none;" id="form">
+            <h1>REGISTRATION</h1>
+            <p>First name</p>
+            <input id='fname' type="text" placeholder="first name">
+            <p>Last name</p>
+            <input id="lname" type="text" placeholder="last name">
+            <button id="submit">Submit</button>
+        </form>
+        <p id="welcome"></p>
+</div>
+
+<script>
+    let fname, lname;
+    var firstName = document.getElementById('fname')
+    var lastName = document.getElementById('lname')
+
+    document.getElementById('open').addEventListener('click', ()=>{
+        document.getElementById('form').style.display = 'block'
+    })
+
+    document.getElementById('submit').addEventListener('click', (e) => {
+        e.preventDefault()
+       fname = document.getElementById('fname').value    
+       lname = document.getElementById('lname').value
+       document.getElementById('form').style.display = 'none'
+       document.getElementById('welcome').innerHTML = 'Welcome ' + fname + ' ' + lname
+    })
+</script>
+
+</body>
+</html>
