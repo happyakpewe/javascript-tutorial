@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	font-family: sans-serif;
+	background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)),
+		url(happy\ pple.jfif);
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	width: 50%;
+	background-color: #fff;
+	padding: 30px 50px;
+}
+
+.form form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.form h1 {
+	text-align: center;
+	font-size: 22px;
+}
+
+.form p {
+	font-size: 15px;
+	color: rgb(102, 102, 102);
+	text-align: center;
+}
+
+.form div {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.form div input {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	padding-left: 10px;
+	border-radius: 4px;
+	border: 2px solid #d8d8d8;
+}
+
+.form div input::placeholder {
+	text-transform: capitalize;
+	color: #6f6f6f;
+}
+
+.form div input:focus {
+	border: 2px solid rgb(19, 196, 255);
+	outline: none;
+}
+
+.signup-btn {
+	height: 40px;
+	border: none;
+	border-radius: 4px;
+}
+
+.form label {
+	font-size: 12px;
+	text-align: center;
+}
+
+.or {
+	color: black !important;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.or::after {
+	content: "";
+	height: 1px;
+	background: #494949;
+	position: absolute;
+	width: 43%;
+	left: 0;
+}
+.or::before {
+	content: "";
+	width: 43%;
+	height: 1px;
+	background: #676767;
+	position: absolute;
+	right: 0;
+}
+
+.social-login {
+	height: 40px;
+	border: 2px solid #d8d8d8;
+	border-radius: 4px;
+	background: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.social-login:hover {
+	border: 2px solid rgb(19, 196, 255);
+}
+.social-login img {
+	width: 20px;
+}
+
+.form span {
+	color: blue;
+}
+
+.form h5 {
+	font-size: 13px;
+	margin-top: 10px;
+	color: rgb(158, 158, 158);
+}
+
+.form h6 {
+	font-size: 13px;
+	margin-top: 10px;
+	color: rgb(134, 134, 134);
+}
