@@ -6,69 +6,57 @@
 }
 
 body{
-    background: url(background.jfif) no-repeat;
-    background-size: cover;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 .registration-form{
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 250px;
+    background-color: #efefef;
+    padding: 40px;
 
 }
 
 .registration-form h1{
     font-size: 30px;
     text-align: center;
-    margin: 40px 0;
-
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.registration-form p{
-    font-size: 20px;
-    margin: 10px 0;
-
+#form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.registration-form input{
-    font-size: 13px;
-    padding: 15px 10px;
-    width: 100%;
-    border: 0;
-    border-radius: 5px;
+#form div input{
+    padding: 10px;
+}
+
+#form div input:focus{
     outline: none;
+    border: 1px solid #000;
 }
 
-.registration-form button{
-    font-size: 15px;
-    font-weight:bold;
-    margin: 20px 0;
-    padding: 10px 15px;
-    width: 50%;
-    border: 0;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
+#form div button{
+    padding: 10px;
 }
 
-.registration-form button:hover{
-color: red;
-}
 
 .btn{
-    font-size: 15px;
-    font-weight:bold;
-    margin: 20px 0;
-    padding: 10px 15px;
-    width: 10%;
-    border: 0;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-.btn:hover{
-    color: red;
+    border: 2px solid #232323;
+    padding: 20px 60px;
+    background: none;
+    font-size: 18px;
 }

@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="classwork2.css">
 </head>
+
 <body>
     <button id="open" class="btn">Open</button>
 
-    <div class="registration-form">
+    <div id="registration-form" class="registration-form" >
 
-        <form action="" style="display: none;" id="form">
+        <form action="" id="form">
             <h1>REGISTRATION</h1>
-            <p>First name</p>
-            <input id='fname' type="text" placeholder="first name">
-            <p>Last name</p>
-            <input id="lname" type="text" placeholder="last name">
-            <button id="submit">Submit</button>
+            <div>
+                <label>First name</label>
+                <input id='fname' type="text" placeholder="first name">
+            </div>
+            <div>
+                <label>Last name</label>
+                <input id="lname" type="text" placeholder="last name">
+            </div>
+            <div>
+
+                <button id="submit">Submit</button>
+            </div>
         </form>
         <p id="welcome"></p>
-</div>
+    </div>
 
-<script>
-    let fname, lname;
-    var firstName = document.getElementById('fname')
-    var lastName = document.getElementById('lname')
+    <script>
+        let fname, lname;
+        const firstName = document.getElementById('fname');
+        const lastName = document.getElementById('lname')
 
-    document.getElementById('open').addEventListener('click', ()=>{
-        document.getElementById('form').style.display = 'block'
-    })
+        document.getElementById('open').addEventListener('click', () => {
+            document.getElementById('registration-form').style.display = 'block'
+        })
 
-    document.getElementById('submit').addEventListener('click', (e) => {
-        e.preventDefault()
-       fname = document.getElementById('fname').value    
-       lname = document.getElementById('lname').value
-       document.getElementById('form').style.display = 'none'
-       document.getElementById('welcome').innerHTML = 'Welcome ' + fname + ' ' + lname
-    })
-</script>
+        document.getElementById('submit').addEventListener('click', (e) => {
+            e.preventDefault()
+            fname = document.getElementById('fname').value
+            lname = document.getElementById('lname').value
+            document.getElementById('form').style.display = 'none'
+            document.getElementById('welcome').innerHTML = 'Welcome ' + fname + ' ' + lname
+            console.log(fname + '' + lname)
+
+            //window.location.replace("http://www.w3schools.com");
+        })
+
+        console.log(fname + '' + lname)
+    </script>
 
 </body>
+
 </html>
